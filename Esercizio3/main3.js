@@ -14,7 +14,7 @@ const oggettoInHtml = (obj) => {
 
         const li = document.createElement('li');
 
-        li.innerHTML = `${key}: ${value}`;
+        li.innerHTML = `${key}: '${value}'`;
 
         ul.appendChild(li);
     }
@@ -26,9 +26,11 @@ window.addEventListener ('load', () => {
 
     const bottone = document.getElementById('bottoneInvio');
 
+    let p = document.createElement('p');
+
     bottone.addEventListener ('click', () => {
 
-        const p = document.createElement('p');
+        p.innerHTML = '';
 
         const input = (document.getElementById('testoUtente'));
 
@@ -41,3 +43,6 @@ window.addEventListener ('load', () => {
         input.value = '';
     })
 })
+
+
+
