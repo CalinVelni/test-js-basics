@@ -14,7 +14,7 @@ const oggettoInHtml = (obj) => {
 
         const li = document.createElement('li');
 
-        li.innerHTML = `${key}: '${value}'`;
+        li.innerHTML = `${key}: ${value}`;
 
         ul.appendChild(li);
     }

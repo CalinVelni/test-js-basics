@@ -14,17 +14,17 @@ const analizzaTesto = (stringa) => {
 
     const analisi = {
 
-        originale: stringa,
+        originale: `'${stringa}'`, 
 
-        minuscolo: stringa.toLowerCase(),
+        minuscolo: `'${stringa.toLowerCase()}'`,
 
-        senzaSpazi: stringa.trim(),
+        senzaSpazi: `'${stringa.trim() }'`,
 
         numeroCaratteri: stringa.length,
 
         contineJS: stringa.includes('JS') || stringa.includes('JavaScript'),
 
-        invertita: invertiStringa(stringa),
+        invertita: `'${invertiStringa(stringa)}'`,
     }
 
     return analisi;
