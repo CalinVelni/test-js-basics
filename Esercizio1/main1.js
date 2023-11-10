@@ -30,6 +30,6 @@ const analizzaTesto = (stringa) => {
     return analisi;
 }
 
-console.log(analizzaTesto('  Ho studiato JavaScript  '));
+// console.log(analizzaTesto('  Ho studiato JavaScript  '));
 
 
